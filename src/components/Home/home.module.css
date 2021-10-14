@@ -5,12 +5,13 @@
     margin-top: 2rem;
 }
 
-.button-container {
+.text-container {
     display: flex;
     justify-content: center;
     margin-top: 5rem;
 }
 
+.button-container,
 .input-container {
     display: flex;
     justify-content: center;

@@ -4,6 +4,7 @@ import Button from "../Button";
 import Navbar from "../Navbar";
 import Card from "../Card";
 import Input from "../Input";
+import Text from "../Text";
 import css from "./home.module.css";
 
 const LinkList = [
@@ -33,6 +34,20 @@ const Home = () => {
         <Router>
           <Navbar variant="tertiary" list={LinkList} />
         </Router>
+      </div>
+      <div className={css["text-container"]}>
+        <Text
+          size="normal"
+          family="poppins"
+          color="dark-blue"
+          value="Ini text small poppins dark blue"
+        />
+        <Text
+          size="extra-large"
+          family="sans-serif"
+          color="black"
+          value="Ini text extra large sans serif dark blue"
+        />
       </div>
       <div className={css["button-container"]}>
         <Button variant="primary" value="Ini Button" />
