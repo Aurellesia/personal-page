@@ -1,0 +1,23 @@
+.primary {
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: .9rem;
+    margin: 0 2rem;
+}
+
+.secondary {
+    height: 40px;
+    border: 2px solid #3e515c;
+    border-radius: 10px;
+    font-size: .9rem;
+    margin: 0 2rem;
+}
+
+.tertiary {
+    height: 40px;
+    border: 2px solid #ad635e;
+    border-radius: 10px;
+    font-size: .9rem;
+    margin: 0 2rem;
+}

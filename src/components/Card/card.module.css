@@ -1,0 +1,80 @@
+.primary {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
+    padding: 20px 30px;
+    width: 300px;
+    margin: 0 5px;
+    box-shadow: 10px 10px 10px #6b6c6d;
+}
+
+.card-title-primary {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+}
+
+.card-content-primary {
+    color: #000;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.card-text-dark {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.secondary {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 20px 30px;
+    width: 300px;
+    margin: 0 5px;
+    box-shadow: 10px 10px 10px #3e515c;
+}
+
+.card-title-secondary {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3e515c;
+    text-align: left;
+}
+
+.card-content-secondary {
+    color: #6c6d6c;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.card-text-secondary {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tertiary {
+    border: 1px solid #ad635e;
+    background-color: #ad635e;
+    padding: 20px 30px;
+    width: 300px;
+    margin: 0 5px;
+    box-shadow: 10px 10px 10px #444444;
+}
+
+.card-title-tertiary {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}
+
+.card-content-tertiary {
+    color: #fff;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.card-text-tertiary {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
