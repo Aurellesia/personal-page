@@ -1,9 +1,7 @@
 const CardList = [
   {
     title: "Digital Illustration",
-    text: "I can create faceless human illustrations, \
-    illustrations for website assets, flat illustrations, \
-    icons and any other digital art according to your request.",
+    text: "I can create faceless human illustrations, illustrations for website assets, flat illustrations, icons and any other digital art according to your request.",
   },
   {
     title: "Frontend Development",
