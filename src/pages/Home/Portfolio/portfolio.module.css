@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  padding: 0 10rem;
+}
+.img-portfo {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+}

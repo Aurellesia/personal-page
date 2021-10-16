@@ -1,23 +1,31 @@
-.primary {
-    height: 40px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    font-size: .9rem;
-    margin: 0 2rem;
+.primary,
+.secondary,
+.tertiary,
+.textarea-primary,
+.textarea-secondary,
+.textarea-tertiary {
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  width: 100%;
+  font-family: "Poppins";
 }
 
-.secondary {
-    height: 40px;
-    border: 2px solid #3e515c;
-    border-radius: 10px;
-    font-size: .9rem;
-    margin: 0 2rem;
-}
-
+.primary,
+.secondary,
 .tertiary {
-    height: 40px;
-    border: 2px solid #ad635e;
-    border-radius: 10px;
-    font-size: .9rem;
-    margin: 0 2rem;
+  height: 30px;
+}
+.primary,
+.textarea-primary {
+  border: 1px solid #000;
+}
+.secondary,
+.textarea-secondary {
+  border: 1px solid #3e515c;
+}
+.tertiary,
+.textarea-tertiary {
+  border: 1px solid #ad635e;
 }

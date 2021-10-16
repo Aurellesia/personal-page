@@ -1,0 +1,17 @@
+footer {
+  margin-top: 1.25rem;
+  background-color: #90a2a8;
+  text-align: center;
+  padding-top: 2rem;
+}
+.social-media {
+  margin-bottom: 1.5rem;
+}
+
+.icons {
+  margin: 0 1.5rem;
+}
+.copyright {
+  background-color: #6b797e;
+  padding: 1.5rem 1rem;
+}

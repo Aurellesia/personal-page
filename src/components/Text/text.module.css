@@ -1,52 +1,50 @@
 /* Text Size */
 
 .size-normal {
-    font-size: 13px;
+  font-size: 16px;
 }
 
 .size-semi-large {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .size-large {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .size-extra-large {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .size-ultra-large {
-    font-size: 55px;
+  font-size: 55px;
 }
-
 
 /* Text Color */
 
 .black {
-    color: black;
+  color: black;
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
 .dark-blue {
-    color: #3e515c;
+  color: #3e515c;
 }
 
 .grey {
-    color: #979797;
+  color: #979797;
 }
-
 
 /* Font Family */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins|Suez+One|Raleway|Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins|Suez+One|Raleway|Open+Sans&display=swap");
 .sans-serif {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .poppins {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }

@@ -1,7 +1,4 @@
-// import Button from "./components/Button";
-// import Card from "./components/Card";
-import Home from "./components/Home";
-// import Input from "./components/Input";
+import Home from "./pages/Home";
 
 function App() {
   return (

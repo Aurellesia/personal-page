@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 // import classNames from "classnames";
 import css from "./input.module.css";
 
-const Input = ({ id, big, variant, placeholder, type }) => {
+const Input = ({ id, big, variant, placeholder, size, type }) => {
   if (big) {
     return (
       <textarea
         id={id}
-        className={css[variant]}
+        className={css["textarea-" + variant]}
         placeholder={placeholder}
+        rows="5"
       ></textarea>
     );
   }
