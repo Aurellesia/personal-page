@@ -1,9 +1,9 @@
-import Home from "./pages/Home";
+import RegisterForm from "components/RegisterForm";
 
 function App() {
   return (
     <>
-      <Home />
+      <RegisterForm />
     </>
   );
 }
