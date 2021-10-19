@@ -49,7 +49,7 @@ export default class SearchNews extends Component {
                   <img
                     src={item.urlToImage}
                     className={css["news-img"]}
-                    alt="Image"
+                    alt="ini gambar.."
                   />
                   <div>{item.title}</div>
                   <div className={css["news-desc"]}>{item.description}</div>
