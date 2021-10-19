@@ -1,9 +1,9 @@
-import RegisterForm from "components/RegisterForm";
+import News from "pages/News";
 
 function App() {
   return (
     <>
-      <RegisterForm />
+      <News />
     </>
   );
 }

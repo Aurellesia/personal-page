@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .primary,
 .secondary,
-.tertiary {
+.tertiary,
+.news {
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
   width: 300px;
   margin: 0 5px;
+  font-family: "Poppins";
 }
 
 .primary {
@@ -22,6 +25,13 @@
   border: 1px solid #ad635e;
   background-color: #ad635e;
   box-shadow: 10px 10px 10px #444444;
+}
+.news {
+  border: 1px solid #fff;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #6b6c6d;
+  margin: 1rem;
+  width: 75%;
 }
 
 .card-title-primary,

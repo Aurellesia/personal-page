@@ -1,0 +1,40 @@
+.news-container {
+  margin: 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0.3rem;
+}
+
+.news-img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.news-desc,
+.news-link {
+  font-size: 10px;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.news-link {
+  color: grey;
+  width: fit-content;
+  padding: 0.4rem;
+  border: 1px solid lavender;
+  border-radius: 5px;
+  background-color: lavender;
+}
+
+input {
+  font-size: 0.9rem;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  font-family: "Poppins";
+}
+
+form {
+  margin-left: 5rem;
+  margin-top: 3rem;
+}

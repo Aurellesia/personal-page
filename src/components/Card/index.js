@@ -5,14 +5,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ variant, value, children }) => {
   if (children) {
-    return (
-      <div className={css[variant]}>
-        {children}
-        <Link to="#" className={css["readmore"]}>
-          Read more...
-        </Link>
-      </div>
-    );
+    return <div className={css[variant]}>{children}</div>;
   }
   return (
     <div className={css[variant]}>

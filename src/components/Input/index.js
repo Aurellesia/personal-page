@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 // import classNames from "classnames";
 import css from "./input.module.css";
 
-const Input = ({ id, big, variant, placeholder, size, type }) => {
+const Input = ({ id, big, variant, placeholder, type }) => {
   if (big) {
     return (
       <textarea
