@@ -46,7 +46,11 @@ export default class SearchNews extends Component {
             {this.state.news.map((item) => {
               return (
                 <Card variant="news" key={item.id}>
-                  <img src={item.urlToImage} className={css["news-img"]} />
+                  <img
+                    src={item.urlToImage}
+                    className={css["news-img"]}
+                    alt="Image"
+                  />
                   <div>{item.title}</div>
                   <div className={css["news-desc"]}>{item.description}</div>
                   <Link
