@@ -21,7 +21,7 @@ const Card = ({ variant, value, children }) => {
 };
 
 Card.propTypes = {
-  variant: PropTypes.oneOfType(["primary", "secondary", "tertiary"]),
+  variant: PropTypes.oneOf(["primary", "secondary", "tertiary", "news"]),
   value: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
 };

@@ -20,7 +20,6 @@ export default class SearchNews extends Component {
   };
 
   handleSubmit = (e) => {
-    e.preventDefault();
     axios
       .get(
         `https://newsapi.org/v2/everything?q=${this.state.keyword}&language=en&apiKey=ace39ffa62e34c919e72c14b2fa3083f`
@@ -29,8 +28,23 @@ export default class SearchNews extends Component {
         this.setState({
           news: response.data.articles,
         });
+        this.state.news.length === 0
+          ? alert(`Data dengan keyword ${this.state.keyword} tidak ada.`)
+          : console.log(this.state.news);
       })
-      .catch(() => alert(`Data dengan tidak dapat ditemukan.`));
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else if (error.request) {
+          console.log(error.request);
+        } else {
+          console.log("Error", error.message);
+        }
+        console.log(error.config);
+      });
+    e.preventDefault();
   };
 
   render() {
@@ -40,12 +54,11 @@ export default class SearchNews extends Component {
           <input value={this.state.keyword} onChange={this.handleChange} />
           <input type="submit" value="Search" />
         </form>
-
         <Router>
           <div className={css["news-container"]}>
-            {this.state.news.map((item) => {
+            {this.state.news.map((item, index) => {
               return (
-                <Card variant="news" key={item.id}>
+                <Card variant="news" key={index}>
                   <img
                     src={item.urlToImage}
                     className={css["news-img"]}

@@ -32,9 +32,9 @@ export default class News extends Component {
       <Router>
         <SearchNews />
         <div className={css["news-container"]}>
-          {this.state.news.map((item) => {
+          {this.state.news.map((item, index) => {
             return (
-              <Card variant="news" key={item.id}>
+              <Card variant="news" key={index}>
                 <img
                   src={item.urlToImage}
                   className={css["news-img"]}
