@@ -20,7 +20,7 @@ function FunctionNews() {
         })
         .catch((error) => console.log(error));
     }
-  }, []);
+  }, [renderGetAll]);
 
   return (
     <>

@@ -23,6 +23,7 @@ function FunctionSearchNews({ setRenderGetAll }) {
         })
         .catch((error) => console.log(error));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [keyword]);
 
   const handleChange = (e) => {
@@ -72,7 +73,7 @@ function FunctionSearchNews({ setRenderGetAll }) {
               );
             })
           ) : (
-            <div style={{ textAlign: "center" }}>
+            <div style={{ marginLeft: "2rem" }}>
               <p className={css["text-error"]}>Data tidak ditemukan</p>
               <button onClick={handleBack}>Back</button>
             </div>
