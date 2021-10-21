@@ -1,9 +1,11 @@
-import News from "pages/News";
+import FunctionNews from "pages/FunctionNews";
+import FunctionSearchNews from "pages/FunctionNews/FunctionSearchNews";
 
 function App() {
   return (
     <>
-      <News />
+      <FunctionNews />
+      {/* <FunctionSearchNews setRenderGetAll={setRenderGetAll} /> */}
     </>
   );
 }
