@@ -1,11 +1,8 @@
-import FunctionNews from "pages/FunctionNews";
+import React from "react";
+import Route from "./routes";
 
 function App() {
-  return (
-    <>
-      <FunctionNews />
-    </>
-  );
+  return <>{Route}</>;
 }
 
 export default App;
