@@ -11,29 +11,6 @@ const HomeContainer = styled.div`
   padding: 6rem 0 3rem;
 `;
 
-const HomeBox = styled.div`
-  background-color: #dcdcdc;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border: 2px solid #858585;
-  margin: 0 6rem;
-`;
-const TitleBoxTop = styled.div`
-  background-color: #dcdcdc;
-  height: 3rem;
-  border: 2px solid #858585;
-  margin: 0 6rem;
-  border-radius: 10px 10px 0 0;
-`;
-
-const TitleBoxBottom = styled.div`
-  background-color: #dcdcdc;
-  height: 3rem;
-  border: 2px solid #858585;
-  margin: 0 6rem;
-  border-radius: 0 0 10px 10px;
-`;
 const HomeCircle = styled.div`
   border-radius: 50%;
   width: 15rem;
