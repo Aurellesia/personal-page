@@ -1,8 +1,12 @@
+import Redux from "components/Redux";
 import React from "react";
-import Route from "./routes";
 
 function App() {
-  return <>{Route}</>;
+  return (
+    <>
+      <Redux />
+    </>
+  );
 }
 
 export default App;
