@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import {
   ContentContainer,
   Gray,
@@ -41,7 +40,7 @@ const CardText = styled(Text)`
   color: ${Gray};
 `;
 
-const CardLink = styled(Link)`
+const CardLink = styled.a`
   color: ${BluePolice};
   bottom: 1rem;
   display: inline-block;

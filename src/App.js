@@ -1,11 +1,15 @@
-import React from "react";
-import Routes from "routes";
+import PersonalWeb from "pages/PersonalWeb";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Routes />
-    </>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<PersonalWeb />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
