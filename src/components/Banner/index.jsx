@@ -1,19 +1,8 @@
 import styled from "styled-components";
 import Pict from "assets/Pict.png";
-import {
-  VeryPaleOrange,
-  BluePolice,
-  GreyCadet,
-  Container,
-  Text,
-  Figure,
-  Button,
-} from "components/personal-general-styling";
-
-const BannerContainer = styled(Container)`
-  background-color: ${GreyCadet};
-  padding-top: 63px;
-`;
+import { Container, Text, Figure } from "components/personal-general-styling";
+import { useNavigate } from "react-router-dom";
+import { ButtonProject } from "components/personal-general-styling";
 
 const CaptionBanner = styled.div`
   margin-left: 8rem;
@@ -21,19 +10,16 @@ const CaptionBanner = styled.div`
   flex-direction: column;
 `;
 
-const TextBanner = styled(Text)`
-  color: white;
-`;
-const TextBannerGreet = styled(TextBanner)`
+const TextBannerGreet = styled(Text)`
   font-size: 20px;
 `;
 
-const TextBannerTitle = styled(TextBanner)`
+const TextBannerTitle = styled(Text)`
   font-size: 55px;
 `;
 
-const TextBannerIntro = styled(TextBanner)`
-  font-size: 14px;
+const TextBannerIntro = styled(Text)`
+  font-size: 16px;
 `;
 
 const FigureBanner = styled(Figure)`
@@ -44,37 +30,47 @@ const ImageBanner = styled.img`
   width: 100%;
 `;
 
-const ButtonBanner = styled(Button)`
-  background-color: ${BluePolice};
-  color: #fff;
-  border: 2px solid #fff;
-
-  :hover {
-    background-color: ${VeryPaleOrange};
-    color: #000;
-  }
+const ButtonContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
 `;
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
-    <BannerContainer>
+    <Container>
       <CaptionBanner>
-        <TextBannerGreet>Hi There</TextBannerGreet>
-        <TextBannerTitle>Aurellesia Warsito</TextBannerTitle>
-        <TextBannerTitle>A Digital Illustrator</TextBannerTitle>
+        <TextBannerGreet>Hi,</TextBannerGreet>
+        <TextBannerTitle>I'm Irell</TextBannerTitle>
+        <br />
         <TextBannerIntro>
-          Also a web developer who focused on fullstack development. Intrigued
-          by technology, art, and fabulous food. Seeking to be inspired, to work
-          hard for anything worthwhile, and have been fortunate to do what I
-          love.
+          I'm a web developer from Malang, Indonesia.
         </TextBannerIntro>
-        <ButtonBanner>View Portfolio</ButtonBanner>
+        <br />
+        <TextBannerIntro>
+          I learn programming since 2017 by starting from backend development.
+          Right now, I'm focusing on fullstack development using MERN
+        </TextBannerIntro>
+        <br />
+        <TextBannerIntro>
+          You can usually find me on{" "}
+          <a href="https://www.linkedin.com/in/aurellesiawarsito/">Linkedin</a>{" "}
+          or <a href="https://www.facebook.com/aurellesia.warsi/">Facebook</a>{" "}
+          as well.
+        </TextBannerIntro>
+        <ButtonContainer>
+          <ButtonProject onClick={() => navigate("/projects")}>
+            PROJECTS
+          </ButtonProject>
+        </ButtonContainer>
       </CaptionBanner>
 
       <FigureBanner>
         <ImageBanner src={Pict} />
       </FigureBanner>
-    </BannerContainer>
+    </Container>
   );
 };
 

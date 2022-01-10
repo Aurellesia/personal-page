@@ -5,8 +5,13 @@ body {
   /* font-family: 'Poppins', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: #3e515c;
 }
 
 code {

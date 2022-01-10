@@ -23,7 +23,7 @@ export const NavContainer = styled(Container)`
 `;
 
 export const ContentContainer = styled(Container)`
-  text-align: center;
+  text-align: left;
   margin: 3rem 0;
   flex-direction: column;
 `;
@@ -47,7 +47,7 @@ export const TitleText = styled(Text)`
 
 export const ContentText = styled(Text)`
   font-size: 15px;
-  color: ${Gray};
+  // color: ${Gray};
   margin: 0 5rem;
 `;
 
@@ -65,6 +65,31 @@ export const Button = styled.button`
 
   :hover {
     cursor: pointer;
+  }
+`;
+
+export const ButtonGit = styled(Button)`
+  border: none;
+  border-radius: 0;
+  :hover {
+    background-color: #429fc9;
+  }
+`;
+
+export const ButtonProject = styled.div`
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  background-color: ${GreyCadet};
+  color: #000;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  :hover {
+    background-color: #fff;
+    color: ${GreyCadet};
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.09);
   }
 `;
 
@@ -87,16 +112,55 @@ export const Card = styled.div`
 
 export const PortfolioContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 1rem;
   padding: 0 10rem;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const ImagePortfolio = styled.img`
-  width: 100%;
+export const PortfolioText = styled(Text)`
+  font-size: 20px;
+  // text-align: center;
+`;
+export const PortfolioTitle = styled(Text)`
+  font-size: 40px;
+  text-align: left;
+`;
+export const LinkGit = styled.div`
+  font-size: 15px;
+  padding: 20px 40px;
+  transition: 0.3s;
+  width: 20%;
+  background-color: ${GreyCadet};
+`;
+
+export const WebPortfolio = styled.img`
+  width: 95%;
   height: auto;
   margin: 0;
+  box-shadow: 1px 1px 10px 2px #d4d4d4;
+  transition: 0.3s;
+  :hover {
+    transform: scale(1.09);
+    transition: 0.5s;
+  }
+`;
+
+export const TitleProjectsPage = styled.div`
+  margin-top: 2rem;
+  width: 1rem;
+  background-color: none;
+  color: #000;
+  font-size: 2rem;
+
+  :hover {
+    background-color: ${BluePolice};
+    color: ${GreyCadet};
+    cursor: pointer;
+    transition: 0.3s;
+  }
 `;
 
 export const Input = styled.input`
