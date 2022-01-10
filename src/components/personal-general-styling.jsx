@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
 export const GreyCadet = "#90a2a8";
 export const BluePolice = "#3e515c";
 export const VeryPaleOrange = "#fadcc0";
@@ -14,12 +12,11 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
 `;
-
-export const NavContainer = styled(Container)`
-  position: fixed;
-  top: 0;
-  padding: 0 1rem;
-  z-index: 1;
+export const WorkContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const ContentContainer = styled(Container)`
@@ -28,52 +25,12 @@ export const ContentContainer = styled(Container)`
   flex-direction: column;
 `;
 
-export const CardContainer = styled.div`
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  margin: 2rem;
-  padding: 0 10rem;
-`;
 export const Text = styled.nav`
   display: block;
 `;
 
-export const TitleText = styled(Text)`
-  color: #000;
-  font-size: 28px;
-  margin-bottom: 2rem;
-`;
-
-export const ContentText = styled(Text)`
-  font-size: 15px;
-  // color: ${Gray};
-  margin: 0 5rem;
-`;
-
 export const Figure = styled.figure`
   text-align: center;
-`;
-
-export const Button = styled.button`
-  padding: 0.8rem 2rem;
-  border-radius: 10px;
-  display: inline-block;
-  text-decoration: none;
-  width: fit-content;
-  margin-top: 2rem;
-
-  :hover {
-    cursor: pointer;
-  }
-`;
-
-export const ButtonGit = styled(Button)`
-  border: none;
-  border-radius: 0;
-  :hover {
-    background-color: #429fc9;
-  }
 `;
 
 export const ButtonProject = styled.div`
@@ -93,23 +50,6 @@ export const ButtonProject = styled.div`
   }
 `;
 
-export const LinkButton = styled(Link)`
-  font-size: 15px;
-  text-align: center;
-  padding: 20px 40px;
-  text-decoration: none;
-  transition: 0.3s;
-`;
-
-export const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px;
-  width: 100%;
-  margin: 0 5px;
-  box-shadow: 10px 10px 10px ${BluePolice};
-`;
-
 export const PortfolioContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -122,18 +62,10 @@ export const PortfolioContainer = styled.div`
 
 export const PortfolioText = styled(Text)`
   font-size: 20px;
-  // text-align: center;
 `;
 export const PortfolioTitle = styled(Text)`
   font-size: 40px;
   text-align: left;
-`;
-export const LinkGit = styled.div`
-  font-size: 15px;
-  padding: 20px 40px;
-  transition: 0.3s;
-  width: 20%;
-  background-color: ${GreyCadet};
 `;
 
 export const WebPortfolio = styled.img`
@@ -163,27 +95,32 @@ export const TitleProjectsPage = styled.div`
   }
 `;
 
-export const Input = styled.input`
-  border-radius: 10px;
-  font-size: 0.9rem;
-  margin: 0.3rem;
-  padding: 0.3rem;
-  height: 30px;
+export const TitleProject = styled.div`
+  margin: 2rem 0 1rem 0;
+  background-color: none;
+  color: #000;
+  font-size: 2.5rem;
 `;
 
-export const Textarea = styled.textarea`
-  border-radius: 10px;
-  font-size: 0.9rem;
-  margin: 0.3rem;
-  padding: 0.3rem;
+export const ImagePortfolio = styled.img`
+  width: 30%;
+  height: auto;
+  margin: 2rem 0 1rem 0;
+  box-shadow: 1px 1px 10px 2px #d4d4d4;
+  transition: 0.3s;
+  :hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
 `;
 
-export const Footer = styled.footer`
-  margin-top: 1.25rem;
-  text-align: center;
-  padding-top: 2rem;
+export const DescContainer = styled.div`
+  padding: 1rem 12rem;
+  text-align: justify;
 `;
 
-export const SocMed = styled.div`
-  margin-bottom: 1.5rem;
+export const GitContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 4rem 0;
 `;
