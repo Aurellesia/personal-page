@@ -19,7 +19,7 @@ const TextBannerTitle = styled(Text)`
 `;
 
 const TextBannerIntro = styled(Text)`
-  font-size: 16px;
+  font-size: 20px;
 `;
 
 const FigureBanner = styled(Figure)`
