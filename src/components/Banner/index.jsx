@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import Pict from "assets/Pict.png";
+import Pict from "assets/me.png";
 import { Container, Text, Figure } from "components/personal-general-styling";
 import { useNavigate } from "react-router-dom";
 import { ButtonProject } from "components/personal-general-styling";
 
 const CaptionBanner = styled.div`
-  margin-left: 8rem;
+  margin-left: -4rem;
   width: 50%;
   flex-direction: column;
 `;
@@ -15,11 +15,13 @@ const TextBannerGreet = styled(Text)`
 `;
 
 const TextBannerTitle = styled(Text)`
-  font-size: 55px;
+  font-size: 80px;
 `;
 
 const TextBannerIntro = styled(Text)`
   font-size: 20px;
+  background-color: #fff;
+  padding: 0 0.4rem;
 `;
 
 const FigureBanner = styled(Figure)`
@@ -27,20 +29,24 @@ const FigureBanner = styled(Figure)`
 `;
 
 const ImageBanner = styled.img`
-  width: 100%;
+  width: 120%;
 `;
 
 const ButtonContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 1rem;
+  margin-left: 10rem;
+`;
+
+const ButtonProjectBanner = styled(ButtonProject)`
+  width: 0.5rem;
 `;
 
 const Banner = () => {
   const navigate = useNavigate();
   return (
     <Container>
+      <FigureBanner>
+        <ImageBanner src={Pict} />
+      </FigureBanner>
       <CaptionBanner>
         <TextBannerGreet>Hi,</TextBannerGreet>
         <TextBannerTitle>I'm Irell</TextBannerTitle>
@@ -61,15 +67,16 @@ const Banner = () => {
           as well.
         </TextBannerIntro>
         <ButtonContainer>
-          <ButtonProject onClick={() => navigate("/projects")}>
+          <ButtonProjectBanner onClick={() => navigate("/projects")}>
             PROJECTS
-          </ButtonProject>
+          </ButtonProjectBanner>
+        </ButtonContainer>
+        <ButtonContainer>
+          <ButtonProjectBanner onClick={() => navigate("/projects")}>
+            ARTICLES
+          </ButtonProjectBanner>
         </ButtonContainer>
       </CaptionBanner>
-
-      <FigureBanner>
-        <ImageBanner src={Pict} />
-      </FigureBanner>
     </Container>
   );
 };

@@ -11,9 +11,10 @@ import {
 import { PortfolioTitle } from "components/personal-general-styling";
 import { TitleProjectsPage } from "components/personal-general-styling";
 import { ButtonProject } from "components/personal-general-styling";
+import Navbar from "components/Navbar";
 
 const ProjectContainer = styled.div`
-  padding: 1rem 0 2rem 10rem;
+  padding: 1rem 0 0 10rem;
 `;
 
 const Portfolio = () => {
@@ -21,6 +22,7 @@ const Portfolio = () => {
   return (
     <>
       <ProjectContainer>
+        {/* <Navbar /> */}
         <TitleProjectsPage>Projects</TitleProjectsPage>
         <PortfolioText>
           These are some of the projects I have worked on. <br />
@@ -46,6 +48,7 @@ const Portfolio = () => {
         </PortfolioContainer>
         <br />
         <PortfolioContainer>
+          <WebPortfolio src={Web2} />
           <div>
             <PortfolioTitle>Vegsupplies</PortfolioTitle>
             <br />
@@ -57,7 +60,6 @@ const Portfolio = () => {
               View Details
             </ButtonProject>
           </div>
-          <WebPortfolio src={Web2} />
         </PortfolioContainer>
       </ContentContainer>
     </>
