@@ -11,7 +11,6 @@ import {
 import { PortfolioTitle } from "components/personal-general-styling";
 import { TitleProjectsPage } from "components/personal-general-styling";
 import { ButtonProject } from "components/personal-general-styling";
-import Navbar from "components/Navbar";
 
 const ProjectContainer = styled.div`
   padding: 1rem 0 0 10rem;
@@ -22,7 +21,6 @@ const Portfolio = () => {
   return (
     <>
       <ProjectContainer>
-        {/* <Navbar /> */}
         <TitleProjectsPage>Projects</TitleProjectsPage>
         <PortfolioText>
           These are some of the projects I have worked on. <br />
